@@ -343,7 +343,7 @@
             <div class="job-period">май 2021 — настоящее время</div>
           </div>
           <div class="job-role">Старший .NET-разработчик</div>
-          <div class="job-duration">5 лет 1 месяц · Москва (удалённо) · SaaS / Cloud Platform</div>
+          <div class="job-duration">5 лет 7 месяцев · Москва (удалённо) · SaaS / Cloud Platform</div>
           <div class="job-desc">
             Разработка облачной платформы по доставке продуктов 1С:Предприятие по SaaS-модели. Полный цикл: проектирование, разработка, CI/CD, мониторинг.
           </div>
@@ -387,6 +387,28 @@
       </section>
 
       <section class="section">
+        <div class="section-title">Пет-проекты</div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-company">Умная кормушка для кота</div>
+            <div class="job-period">2026</div>
+          </div>
+          <div class="job-role">.NET 8 · ONNX Runtime · YOLO11 · ESP32 · WireGuard</div>
+          <div class="job-duration"><a href="https://github.com/VovaZhukovsky/ObjectDetectionAlert" target="_blank" style="color: var(--accent); text-decoration: none;">github.com/VovaZhukovsky/ObjectDetectionAlert</a></div>
+          <div class="job-desc">
+            Система следит за миской через IP-камеру, сама досыпает корм и присылает уведомления в Telegram. Полный цикл от датасета до паяльника.
+          </div>
+          <ul class="achievements">
+            <li>Собрал и разметил собственный датасет, обучил модель классификации <span class="highlight">YOLO11</span> на 4 состояния миски и экспортировал её в <span class="highlight">ONNX</span>.</li>
+            <li>Написал сервис на <span class="highlight">ASP.NET Core</span>: фоновый воркер, инференс через ONNX Runtime с препроцессингом, совпадающим с обучением, защита от ложных срабатываний по серии кадров.</li>
+            <li>Спаял плату дозатора на <span class="highlight">ESP32</span> и написал прошивку с HTTP API; сервис открывает дозатор один раз за эпизод и проверяет результат.</li>
+            <li>Подключил домашнюю камеру к удалённому серверу через туннель <span class="highlight">WireGuard</span> на OpenWrt с доступом только к нужным устройствам; деплой через <span class="highlight">GitHub Actions</span> и systemd.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
         <div class="section-title">Образование</div>
 
         <div class="edu-item">
@@ -399,6 +421,12 @@
           <div class="edu-school">МГУТУ им. К.Г. Разумовского</div>
           <div class="edu-degree">Повышение квалификации · Информационно-аналитические системы безопасности (МО РФ)</div>
           <span class="edu-year">2017</span>
+        </div>
+
+        <div class="edu-item" style="margin-top: 12px;">
+          <div class="edu-school">OTUS · C# Developer. Advanced</div>
+          <div class="edu-degree">112 академических часов, 9 из 9 практических заданий. Проектная работа: сервис распределённой блокировки ресурсов на основе in-memory хранилища для облачной системы управления базами 1С:Предприятие</div>
+          <span class="edu-year">2026 · Сертификат №3816-706393</span>
         </div>
       </section>
 
